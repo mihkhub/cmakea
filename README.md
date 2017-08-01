@@ -1,1 +1,1 @@
-# CMake in Action
+# To build, test and package software. 
