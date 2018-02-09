@@ -54,7 +54,7 @@ docker build -t seastar-dev docker/dev
 Create an shell function for building insider the container (bash syntax given):
 
 ```
-export SEASTAR_SRC=$HOME/src/seastar/
+$ export SEASTAR_SRC=$HOME/src/seastar/
 
 $ seabuild() { docker run -v $SEASTAR_SRC:/seastar -u $(id -u):$(id -g) -w /seastar -t seastar-dev "$@"; }
 ```
