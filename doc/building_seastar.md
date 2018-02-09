@@ -1,3 +1,5 @@
+@file: building_seastar.md
+
 # Building Seastar
 
 Seastar requires g++ >= 4.9.  Install g++-4.9 or later (use --compiler option).
@@ -41,5 +43,6 @@ Seastar requires g++ >= 4.9.  Install g++-4.9 or later (use --compiler option).
 
     ```
 
-
+## References
+- [Building Seastar on CentOS](https://github.com/scylladb/seastar/blob/master/doc/building-centos.md)
 
