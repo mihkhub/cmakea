@@ -1,5 +1,7 @@
 # Building Seastar
 
+Seastar requires g++ >= 4.9.  Install g++-4.9 or later (use --compiler option).
+
 ## Building seastar on CentOS 7
 - Installing required [install-dependencies.sh](install-dependencies.sh):
 
@@ -29,6 +31,11 @@
      $ cd seastar/
      $ git submodule update --init --recursive
      ```
+ - configure:
+   ```
+   $ ./configure.py --compiler=/opt/scylladb/bin/g++-7.2 --static-stdc++
+
+    ```
 
 
 
