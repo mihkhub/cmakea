@@ -22,6 +22,13 @@
   - Building demo:
   
     ```ninja-build```
+    
+  - Download seastar:
+     ```
+     $ git clone git@github.com:scylladb/seastar.git
+     $ cd seastar/
+     $ git submodule update --init --recursive
+     ```
 
 
 
