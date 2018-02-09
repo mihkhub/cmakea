@@ -54,7 +54,9 @@ docker build -t seastar-dev docker/dev
 Create an shell function for building insider the container (bash syntax given):
 
 ```
-$ seabuild() { docker run -v $HOME/seastar/:/seastar -u $(id -u):$(id -g) -w /seastar -t seastar-dev "$@"; }
+export SEASTAR_SRC=$HOME/src/seastar/
+
+$ seabuild() { docker run -v $SEASTAR_SRC:/seastar -u $(id -u):$(id -g) -w /seastar -t seastar-dev "$@"; }
 ```
 
 (it is recommended to put this inside your .bashrc or similar)
@@ -62,7 +64,7 @@ $ seabuild() { docker run -v $HOME/seastar/:/seastar -u $(id -u):$(id -g) -w /se
 To build inside a container:
 
 ```    
-$ seabuild ./configure.py --static
+$ seabuild ./configure.py
 $ seabuild ninja-build
 ```
 ## References
