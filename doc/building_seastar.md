@@ -18,6 +18,10 @@
    $ g++ --version
       g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-16)
      ```
+     
+  - Building demo:
+  
+    ```ninja-build```
 
 
 
