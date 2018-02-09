@@ -11,7 +11,7 @@ Seastar requires g++ >= 4.9.  Install g++-4.9 or later (use --compiler option).
 
      ```$ source /etc/profile.d/scylla.sh```
      
- - Validate `g++`:
+- Validate `g++`:
    
    ```
    $ g++-7.2 --version
@@ -21,16 +21,20 @@ Seastar requires g++ >= 4.9.  Install g++-4.9 or later (use --compiler option).
       g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-16)
      ```
      
-  - Building demo:
+- Building demo:
   
     ```ninja-build```
     
-  - Download seastar:
+- Download seastar:
      ```
      $ git clone git@github.com:scylladb/seastar.git
      $ cd seastar/
      $ git submodule update --init --recursive
      ```
+ - Checking out Tag `seastar-17.05.0`:
+    ```
+    $ git checkout -b seastar-17.05.0 seastar-17.05.0
+    ```
  - configure:
    ```
    $ ./configure.py --compiler=/opt/scylladb/bin/g++-7.2 --static-stdc++
