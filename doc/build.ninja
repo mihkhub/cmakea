@@ -1,0 +1,10 @@
+gs = -Wall
+
+rule cpp
+  command = g++ $cflags $in -o $out
+
+rule cpp7
+  command = g++-7.2 $cfags $in -o $out
+
+build gnuc4: cpp gnuc_version.cc
+build gnuc7: cpp7 gnuc_version.cc
