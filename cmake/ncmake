@@ -1,0 +1,11 @@
+#!/bin/sh
+cmake=cmake
+case $0 in
+  */*)
+    dir=${0%/*}
+    if test -x "$dir/cmake"; then
+      PATH=$dir:$PATH
+      cmake=cmake
+    fi;;
+esac
+exec $cmake -G "Eclipse CDT4 - Ninja" "$@"
